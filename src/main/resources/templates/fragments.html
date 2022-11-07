@@ -27,8 +27,8 @@
         </div>
     </div>
 
-    <div th:fragment="search-list" th:each="job : ${jobs}">
-        <table th:each="job : ${job}" class="job-listing">
+    <div th:fragment="search-list">
+        <table th:each="job : ${jobs}" class="job-listing">
             <tr>
                 <td>ID:</td>
                 <td th:text="${job.id}"></td>
